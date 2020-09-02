@@ -8,7 +8,8 @@ public class oppgave_6 {
 public static void main(String[] args) {
 		
 		int tall1 = Integer.parseInt(showInputDialog("Skriv et tall:"));
-		int result = 0;
+		int result = 1;
+		
 		
 		if (tall1 < 0 ) {
 			showMessageDialog(null,"Dette tallet er ikke gylding");
@@ -18,9 +19,9 @@ public static void main(String[] args) {
 		}
 		
 		else {
-			for (int i=tall1 ; i>=1 ; i--) {
-				int tall2 = tall1;
-				result = tall2 * (tall1 - 1);
+			for (int i = tall1 ; i >= 1; i--) {
+				
+				result *= i; 
 			}
 		}
 		showMessageDialog(null, "Svaret er: " + result  );
